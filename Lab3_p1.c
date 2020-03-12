@@ -28,7 +28,7 @@ void main(void)
 	//Inicio de las iteraciones con while
 	//Se establece que se evalue para un numero un entero menor al ingresado y establecemos el valor verdadero a la variable primo
 	while(i<N-1 && primo==1){
-		//Se establece que si el residuo del numero ingresado y el valor de la iteracion es cero entonces no es un numerooooo primo 
+		//Se establece que si el residuo del numero ingresado y el valor de la iteracion es cero entonces no es un numero primo 
 		if(N%i==0)
 			primo=0;
 		//Se realiza el conteo de los elementos que ingresan
