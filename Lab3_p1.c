@@ -19,19 +19,19 @@ void main(void)
 	int N,i=0;
 	int primo=0;
 	//Muestra en consola lo que realiza el programa y pide el ingreso del numero a evaluar
-	printf("Determina si un numero es primo\n ingresar el valor de N:\t");
+	printf("Determina si un numero es primo\n Ingresar el valor de N:\n \t");
 	//Obtiene los datos que ingresa al usuario
 	scanf("%d",&N);
 	//Se almacenan todas las variables
 	i=2;
 	primo=1;
 	//Inicio de las iteraciones con while
-	//Se establece que se evalue para un numero un entero menor al ingresado y establecemos el valor verdadero a la variable primo
+	//Se establece que se realice a iteracion para numeros desde un entero menor al ingresado y establecemos el valor verdadero a la variable primo
 	while(i<N-1 && primo==1){
 		//Se establece que si el residuo del numero ingresado y el valor de la iteracion es cero entonces no es un numero primo 
 		if(N%i==0)
 			primo=0;
-		//Se realiza el conteo de los elementos que ingresan
+		//Se establece el incremento de uno en uno para las iteraciones
 		i++;
 	}
 	//Verificacion de ingreso de los datos e impresion

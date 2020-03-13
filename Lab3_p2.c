@@ -32,12 +32,16 @@ void main(void)
 	scanf("%d",&N2);
 	//Se almacenan las variables para la comprobacion de los numeros dentro del rango
 	j=N1;
+	//Se presentan los datos obtenidos
+	printf("Los numeros primos son\n");
 	//Inicio de las iteraciones para los numeros dentro del rango
-	//Se evalua para un numero menor o igual al limite superior del rango
-	while(j<=N2){
+	//Las iteraciones inician en el limite inferior
+	//Se establece la condicion de evaluar los numeros menores o iguales al limite superior
+	//Se establece el incremento de las iteraciones de uno en uno
+	for(j=N1;j<=N2;j++){
 		//Inicio de las iteraciones para determinar si el numero es primo
 		//Las variables ya han sido declaradas al inicio
-		//Se almacenan las variables para la comprobacion si es primo
+		//Se almacenan las variables
 		i=2;
 		primo=1;
 		//Inicio de iteraciones para determinar si es primo
@@ -45,14 +49,12 @@ void main(void)
 			//Se establece que si el residuo del numero ingresado y el valor de la iteracion es cero entonces no es un numero primo
 			if(j%i==0)
 				primo=0;
-			//Se raliza el conteo de los elementos que ingresan a la comprobacion de si es primo
+			//Se establece el incremento de las iteraciones de uno en uno
 			i++;
 		}
 		//Se verifican los datos
 		if(primo==1)
 			//Se presentan los resultados
-			printf("Los numeros primos son %d \n",j);
-		//Se hace el conteo de los elementos que ingresaron al analisis de los valores del rango
-		j++;
+			printf("%d \n",j); 
 	}
 }
